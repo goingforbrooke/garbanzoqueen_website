@@ -3,7 +3,7 @@
 * Author           : Jorge Perez
 * Version          : 2.0.1
 * Updated          : June 2023
-* File Description : Background Gradient index.html file. ------------------->
+* File Description : Background Video index.html file. ------------------->
 
 <!DOCTYPE html>
 
@@ -16,10 +16,10 @@
         <title>Treelink Theme - Link in Bio</title>
 
         <!-- Description of your site here -->
-        <meta name="description" content="A modular, responsive & minimalist Link in bio theme built with Bootstrap 5. Easy to deploy & easy to edit. Ideal for mobile & social media use." />
+        <meta name="description" content="Garbanzo Queen's social media links." />
 
         <!-- Tags, keywords & SEO content here -->
-        <meta name="keywords" content="add your keywords here" />
+        <meta name="keywords" content="garbanzo__queen, garbanzo_queen, garbanzoqueen, twitch, gaming" />
 
         <!-- Author's name here -->
         <meta name="author" content="https://themes.jperez.ca/" />
@@ -38,7 +38,7 @@
         <!-- Custom Style CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
         <!-- Custom BG Video CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/colors/gradient-bg.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/colors/video-mode.css">
 
     </head>
 
@@ -51,6 +51,17 @@
             </div>
         </div>
         <!-- 1. End: Loader/Spinner --------------------->
+
+        <!-- Background Video Player --------------------------------------------------------------------------------------
+        The parameters of the playback are specified in the line below, IE:
+        Autoplay starts the video automatically, Loop, muted, etc -------------------------------------------------------->
+        <video autoplay loop muted playsinline class="bg-video">
+            
+            <!-- Change your video here - (Make sure the video is placed inside the "images" folder) -->
+            <!-- replace the src="your video here" with the actual video path  -->
+            <source src="assets/images/gradient.mp4" type="video/mp4" />
+
+        </video>
 
 
         <!-- 3. Start: Header Section ------------------->
@@ -65,7 +76,7 @@
                 <div class="header-content text-center mx-auto">
 
                     <!-- Change your profile name here -->
-                    <h4 class="custom-text-color-primary header-text mb-2 mt-3">Bruce Wayne</h4>
+                    <h4 class="custom-text-color-primary header-text mb-2 mt-3">Garbanzo Queen</h4>
 
                     <!-- Change your profile header here - List of words in the typed animation found on line #178 -->
                     <p class="custom-text-color-secondary subheader-text mb-2">I'm <span class="element"></span></p>
@@ -233,7 +244,7 @@
                     </div>
 
                     <!-- Replace the text of the footer here -->
-                    <p class="custom-text-color-secondary footer-text mb-5 mt-3">©2023 - Bruce Wayne</p>
+                    <p class="custom-text-color-secondary footer-text mb-5 mt-3">©2023 - Garbanzo Queen</p>
 
                 </div>
             </div>
@@ -264,7 +275,7 @@
                 // In this section, you can customize the Typescript effect.
                 // Change the words that cycle in your profile header below:
                 // Make sure that the words are inside a "" and separated by a ,
-                strings: ["A Superhero 💫", "A Detective 🕵🏻‍♂️", "Vengeance 🔥"],
+                strings: ["a streamer 🎥", "a gamer 🎮", "an adrenaline junkie 🎢"],
 
                 // Change the speed of the typing effect here:
                 typeSpeed: 40,
