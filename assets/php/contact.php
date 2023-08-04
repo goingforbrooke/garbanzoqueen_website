@@ -51,7 +51,7 @@ $address = "garbanzoqueenbean@gmail.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You have been contacted by ' . $name . '.';
+$e_subject = 'Links contacts from ' . $name . '.';
 
 // Configuration option.
 // You can change this if you feel that you need to.
