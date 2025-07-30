@@ -11,6 +11,11 @@
 @import "/assets/fonts/font-family/font-1.css";
 
 /*===================================
+    Font Awesome Brand icons
+=====================================*/
+@import "fontawesome_brands.min.css";
+
+/*===================================
     Header CSS
 =====================================*/
 .rounded-circle {

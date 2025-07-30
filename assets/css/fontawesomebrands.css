@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/fa-brands-400.woff2') format('woff2');
+}
+
+.fab,
+.fa-brands {
+    font-family: 'Font Awesome 6 Brands';
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* TikTok icon definition */
+.fa-tiktok:before {
+    content: "\e07b";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
