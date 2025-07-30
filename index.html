@@ -325,6 +325,41 @@
         <!-- Metricool Web Connection -->
         <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"c675a7896136c9251ebbf66d647345f"})});</script>
 
+        <!-- Hide Twitch embed when not streaming (so buttons show at top, especially on mobile) -->
+        <script>
+            // Twitch live status checker
+            async function checkTwitchStatus() {
+                const channel = 'goingforbrooke';
+                const embedContainer = document.getElementById('twitch-embed');
+
+                try {
+                    const response = await fetch(`https://api.twitch.tv/helix/streams?user_login=${channel}`, {
+                        headers: {
+                            'Client-ID': 'gp762nuuoqcoxypju8c569th9wz7q5',
+                            'Authorization': 'Bearer 42m2u917j8xfyejqqzpo03lpl9b0e8'
+                        }
+                    });
+
+                    const data = await response.json();
+
+                    if (data.data && data.data.length > 0) {
+                        // Channel is live
+                        embedContainer.style.display = 'block';
+                    } else {
+                        // Channel is offline
+                        embedContainer.style.display = 'none';
+                    }
+                } catch (error) {
+                    console.error('Twitch status check failed:', error);
+                    embedContainer.style.display = 'none';
+                }
+            }
+
+            // Run check every 2 minutes (120000 ms)
+            checkTwitchStatus();
+            setInterval(checkTwitchStatus, 120000);
+        </script>
+
     </body>
 
 </html>
