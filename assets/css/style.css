@@ -29,7 +29,7 @@
 .header-text {
     color: #e9c57e !important;
     font-weight: 700;
-    font-size: clamp(14px, 7vw, 75px); /* adjust min, preferred, max as needed */
+    font-size: clamp(14px, 6vw, 100px); /* adjust min, preferred, max as needed */
     width: 100%;
     text-align: center;
     padding-left: 5%; /* adjust for side padding */
@@ -38,8 +38,14 @@
 }
 
 .subheader-text {
-    font-size: 18px;
+    color: #c5a76b !important;
     font-weight: 700;
+    font-size: clamp(7px, 3vw, 24px); /* adjust min, preferred, max as needed */
+    width: 100%;
+    text-align: center;
+    padding-left: 5%; /* adjust for side padding */
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .footer-text {
@@ -190,6 +196,7 @@
     font-weight: 700;
     transition: all 0.5s;
     letter-spacing: 0.6px;
+    text-shadow: rgba(0, 0, 0, 0.30) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
 }
 
 .btn-custom:hover,
