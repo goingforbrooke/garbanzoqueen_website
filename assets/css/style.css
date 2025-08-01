@@ -173,9 +173,9 @@
 }
 
 .btn-custom {
-    padding: 18px;
-    font-size: 16px;
-    font-weight: 400;
+    padding: 11px;
+    font-size: 20px;
+    font-weight: 700;
     transition: all 0.5s;
     letter-spacing: 0.6px;
 }
