@@ -190,6 +190,7 @@
     color: #e9c57e !important;
     /*Fill button background with opaque brand secondary color*/
     background-color: rgba(98,23,0,50%) !important;
+    border-color: #621700 !important;
 
     padding: 3px;
     font-size: 24px;
