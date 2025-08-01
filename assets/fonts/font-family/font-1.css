@@ -7,21 +7,32 @@
 * File Description : Main Font (Font-1.css) :Inter */
 
 /* Replace the url below with your own if needed. */
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 /* Make sure to also replace the font family as well, if needed. */
+
+/* <weight>: Use a value from 300 to 700 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.cormorant-garamond-standard {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
 :root {
-  font-family: 'Inter', sans-serif;
-    word-wrap: break-word;
-    overflow-x: hidden;
-    letter-spacing: -0.5px;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    word-wrap: break-word;
-    overflow-x: hidden;
-    letter-spacing: -0.5px;
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
 }
 
 h1,
