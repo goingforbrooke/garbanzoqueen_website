@@ -29,7 +29,7 @@
 .header-text {
     color: #e9c57e !important;
     font-weight: 700;
-    font-size: clamp(14px, 6vw, 100px); /* adjust min, preferred, max as needed */
+    font-size: clamp(14px, 9vw, 100px); /* adjust min, preferred, max as needed */
     width: 100%;
     text-align: center;
     padding-left: 5%; /* adjust for side padding */
