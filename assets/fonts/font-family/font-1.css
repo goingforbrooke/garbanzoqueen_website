@@ -14,13 +14,6 @@
 /* <weight>: Use a value from 300 to 700 */
 /* <uniquifier>: Use a unique and descriptive class name */
 
-.cormorant-garamond-standard {
-    font-family: "Cormorant Garamond", serif;
-    font-optical-sizing: auto;
-    font-weight: 450;
-    font-style: normal;
-}
-
 :root {
     font-family: "Cormorant Garamond", serif;
     font-optical-sizing: auto;
@@ -35,11 +28,41 @@ body {
     font-style: normal;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+h2 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+h3 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
+h5 {
+    font-family: "Cormorant Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 450;
+    font-style: normal;
+}
+
 h6 {
     font-family: 'Inter', sans-serif;
     word-wrap: break-word;

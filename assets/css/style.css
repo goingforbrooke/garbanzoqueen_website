@@ -27,12 +27,19 @@
 }
 
 .header-text {
-    font-size: 24px;
+    color: #e9c57e !important;
     font-weight: 700;
+    font-size: clamp(14px, 7vw, 75px); /* adjust min, preferred, max as needed */
+    width: 100%;
+    text-align: center;
+    padding-left: 5%; /* adjust for side padding */
+    padding-right: 5%;
+    box-sizing: border-box;
 }
 
 .subheader-text {
     font-size: 18px;
+    font-weight: 700;
 }
 
 .footer-text {
@@ -173,8 +180,13 @@
 }
 
 .btn-custom {
-    padding: 11px;
-    font-size: 20px;
+    /*Color button text with brand primary color*/
+    color: #e9c57e !important;
+    /*Fill button background with opaque brand secondary color*/
+    background-color: rgba(98,23,0,50%) !important;
+
+    padding: 3px;
+    font-size: 24px;
     font-weight: 700;
     transition: all 0.5s;
     letter-spacing: 0.6px;
