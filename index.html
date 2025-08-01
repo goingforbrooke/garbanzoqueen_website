@@ -345,13 +345,16 @@
                     if (data.data && data.data.length > 0) {
                         // Channel is live
                         embedContainer.style.display = 'block';
+                        document.title = '🔴LIVE goingforbrooke';
                     } else {
                         // Channel is offline
                         embedContainer.style.display = 'none';
+                        document.title = 'goingforbrooke';
                     }
                 } catch (error) {
                     console.error('Twitch status check failed:', error);
                     embedContainer.style.display = 'none';
+                    document.title = 'goingforbrooke';
                 }
             }
 
