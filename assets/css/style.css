@@ -134,13 +134,20 @@
     BG Video Player CSS
 =====================================*/
 .bg-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    min-width: 100% !important;
+    min-height: 100% !important;
+    width: auto !important;
+    height: auto !important;
+    object-fit: cover !important;
+    z-index: -1 !important;
 }
 
-@media (min-aspect-ratio: 16/9) {
+/*25-8-3 Commented out b/c ruining centering*/
+/*@media (min-aspect-ratio: 16/9) {
     .bg-video {
         width: 100%;
         height: auto;
@@ -152,7 +159,7 @@
         width: auto;
         height: 100%;
     }
-}
+}*/
 
 /*===================================
     Navbar
