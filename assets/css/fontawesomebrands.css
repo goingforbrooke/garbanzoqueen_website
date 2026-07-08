@@ -19,3 +19,21 @@
     font-family: 'Font Awesome 6 Brands';
     font-weight: 400;
 }
+
+.fa-x-twitter:before {
+    content: "\e61b";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+.fa-mastodon:before {
+    content: "\f4f6";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+.fa-bluesky:before {
+    content: "\e671";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
