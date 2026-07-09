@@ -1,10 +1,3 @@
-<!--
-* Template Name    : Treelink, the best "link in bio" responsive template.
-* Author           : Jorge Perez
-* Version          : 2.0.1
-* Updated          : June 2023
-* File Description : Background Video index.html file. ------------------->
-
 <!DOCTYPE html>
 
 <html>
@@ -24,47 +17,27 @@
         <!-- Author's name here -->
         <meta name="author" content="https://themes.jperez.ca/" />
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"></noscript>
+
         <!-- Change your favicon image here - (Make sure the photo is placed inside the "images" folder) 180x180 is enough -->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
         <link rel="shortcut icon" type="image/png" href="/assets/images/apple-touch-icon.png">
         <link rel="manifest" href="/manifest.webmanifest">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-        <!-- Materialdesign icons CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/materialdesignicons.min.css">
-        <!-- Animate CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/animate.min.css">
-        <!-- Mobirise icons CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/mobiriseicons.css">
         <!-- Custom Style CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css?v=20260708">
         <!-- Fontawesome icons CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/fontawesomebrands.css">
-        <!-- Custom BG Video CSS -->
-        <link rel="stylesheet" type="text/css" href="assets/css/colors/video-mode.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/fontawesomebrands.css?v=20260708">
 
     </head>
 
     <body>
 
-        <!-- 1. Start: Loader/Spinner ------------------->
-        <div id="preloader">
-            <div id="status">
-                <div class="spinner">Loading...</div>
-            </div>
-        </div>
-        <!-- 1. End: Loader/Spinner --------------------->
-
-        <!-- Background Video Player --------------------------------------------------------------------------------------
-        The parameters of the playback are specified in the line below, IE:
-        Autoplay starts the video automatically, Loop, muted, etc -------------------------------------------------------->
-        <video autoplay loop muted playsinline class="bg-video" poster="assets/images/video-placeholder.jpg">
-            
-            <!-- Change your video here - (Make sure the video is placed inside the "images" folder) -->
-            <!-- replace the src="your video here" with the actual video path  -->
-            <source src="assets/images/25-8-2_orange_thistle_animatedundefined_border_cropped_compressed.mp4" type="video/mp4" />
-
+        <video loop muted playsinline preload="none" class="bg-video" poster="assets/images/video-placeholder.jpg" aria-hidden="true">
+            <source data-src="assets/images/25-8-2_orange_thistle_animatedundefined_border_cropped_compressed.mp4?v=20260708" type="video/mp4" />
         </video>
 
 
@@ -74,7 +47,7 @@
                 <div class="mt-5">
 
                     <!-- Change your profile picture here - (Make sure the photo is placed inside the "images" folder) 300x300px is enough -->
-                    <img class="rounded-circle img-fluid mx-auto d-block" src="assets/images/25-8-1_4b_pfp_brower_icon_hair_toss_300x300_square.jpg" alt="Profile Picture">
+                    <img class="rounded-circle img-fluid mx-auto d-block" src="assets/images/25-8-1_4b_pfp_brower_icon_hair_toss_300x300_square.jpg" width="300" height="300" decoding="async" fetchpriority="high" alt="Profile Picture">
                 </div>
 
                 <div class="header-content text-center mx-auto">
@@ -98,176 +71,54 @@
 
             <!-- Button #6 - replace the "#" with the actual link as well as the text of the button #4 here -->
             <div class="mt-3 pt-2">
-                <a href="https://www.youtube.com/@goingforbrooke" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="mdi mdi-youtube-play"> </i>YouTube <i class="mdi mdi-youtube-play"> </i></a>
+                <a href="https://www.youtube.com/@goingforbrooke" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-youtube"> </i>YouTube <i class="fa-brands fa-youtube"> </i></a>
             </div>
 
             <!-- Button #3 - replace the "#" with the actual link as well as the text of the button #3 here -->
             <div class="mt-3 pt-2">
-                <a href="https://discord.gg/6pacSr88x5" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="mdi mdi-discord"> </i>Discord <i class="mdi mdi-discord"></i></a>
+                <a href="https://discord.gg/6pacSr88x5" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-discord"> </i>Discord <i class="fa-brands fa-discord"></i></a>
             </div>
 
             <!-- Button #2 - replace the "#" with the actual link as well as the text of the button #2 here -->
             <div class="mt-3 pt-2">
-                <a href="https://www.twitch.tv/goingforbrooke" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="mdi mdi-twitch"> </i>Twitch <i class="mdi mdi-twitch"></i></a>
+                <a href="https://www.twitch.tv/goingforbrooke" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-twitch"> </i>Twitch <i class="fa-brands fa-twitch"></i></a>
             </div>
 
             <!-- Change the main button description info, add or remove buttons here ------------------------------------>
             <div class="mt-3 pt-2">
-                <a href="https://www.tiktok.com/@goingforbrooke" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="fa-brands fa-tiktok"> </i>TikTok <i class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.tiktok.com/@goingforbrooke" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-tiktok"> </i>TikTok <i class="fa-brands fa-tiktok"></i></a>
             </div>
 
             <!-- Button #1 - replace the "#" with the actual link as well as the text of the button #1 here -->
             <div class="mt-3 pt-2">
-                <a href="https://www.instagram.com/going4brooke" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="mdi mdi-instagram"> </i>Insta <i class="mdi mdi-instagram"></i></a>
+                <a href="https://www.instagram.com/going4brooke" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-instagram"> </i>Insta <i class="fa-brands fa-instagram"></i></a>
             </div>
 
             <div class="mt-3 pt-2">
-                <a href="https://twitter.com/goingforbrooke" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="fa-brands fa-x-twitter"> </i>Twitter <i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://twitter.com/goingforbrooke" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-x-twitter"> </i>Twitter <i class="fa-brands fa-x-twitter"></i></a>
             </div>
 
             <div class="mt-3 pt-2">
-                <a href="https://hachyderm.io/@goingforbrooke" target="_blank" rel="me noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="fa-brands fa-mastodon"> </i>Mastodon <i class="fa-brands fa-mastodon"></i></a>
+                <a href="https://hachyderm.io/@goingforbrooke" target="_blank" rel="me noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-mastodon"> </i>Mastodon <i class="fa-brands fa-mastodon"></i></a>
             </div>
 
             <div class="mt-3 pt-2">
-                <a href="https://bsky.app/profile/goingforbrooke.bsky.social" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="fa-brands fa-bluesky"> </i>Bluesky <i class="fa-brands fa-bluesky"></i></a>
+                <a href="https://bsky.app/profile/goingforbrooke.bsky.social" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-bluesky"> </i>Bluesky <i class="fa-brands fa-bluesky"></i></a>
             </div>
 
             <!-- Button #4 - replace the "#" with the actual link as well as the text of the button #4 here -->
             <div class="mt-3 pt-2">
-                <a href="https://spotify.link/yjcrZcK0ZBb" target="_blank" rel="noopener noreferrer" style="width: 100%" class="btn btn-round btn-custom"><i class="mdi mdi-spotify"> </i>Spotify <i class="mdi mdi-spotify"> </i></a>
+                <a href="https://spotify.link/yjcrZcK0ZBb" target="_blank" rel="noopener noreferrer" class="btn btn-round btn-custom"><i class="fa-brands fa-spotify"> </i>Spotify <i class="fa-brands fa-spotify"> </i></a>
             </div>
-
-            <!-- Button #6 - Modal Button - Contact Form Redirect -->
-            <!-- <div class="mt-3 pt-2"> -->
-            <!--     <button style="width: 100%" class="btn btn-round btn-custom" data-bs-toggle="modal" data-bs-target="#exampleModal">Promotions <i class="mdi mdi-email"></i></button> -->
-            <!-- </div> -->
 
         </div>
         <!-- 4. End: Main Buttons Section ------------------->
-
-
-        <!-- 5. Start: Modal Form Contents -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-
-                    <!-- Modal Contact Form Header -->
-                    <div class="modal-header">
-                        <h3 class="modal-title custom-text-color-primary" id="exampleModalLabel">Contact Me 📨</h3>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-
-                    <!-- Modal Contact Form Body -->
-                    <div class="modal-body">
-                        <div class="row mt-2">
-                            <div class="col-lg-12">
-                                <div class="form-treelink contact_form">
-                                    <div id="message"></div>
-
-                                    <!-- Form Contents -->
-                                    <form method="post" action="assets/php/contact.php" name="contact-form" id="working_form">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <div class="form-group mt-2">
-                                                    <input name="name" id="name" type="text" class="form-control" placeholder="Name..." >
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="form-group mt-2">
-                                                    <input name="email" id="email" type="email" class="form-control" placeholder="Email Address..." >
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="form-group mt-2">
-                                                <input type="text" class="form-control" id="subject" placeholder="Subject..." />
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="form-group mt-2">
-                                                    <textarea name="comments" id="comments" rows="4" class="form-control" placeholder="Message..."></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-lg-12 text-center mt-3 mb-4">
-
-                                                <!-- Form Buttons -->
-                                                <button type="button" style="width: 30%;" class="btn btn-round btn-custom" data-bs-dismiss="modal">Close</button>
-                                                <input type="reset" id="reset" name="reset" class="resetBnt btn btn-round btn-custom" value="Clear">
-                                                <input type="submit" style="width: 30%;" id="submit" name="send" class="submitBnt btn btn-round btn-custom" value="Send">
-
-                                                <!-- Form Feedback Message -->
-                                                <div id="simple-msg"></div>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 5. End: Modal Form Contents -->
 
 
         <!-- 6. Start: Footer Section ------------------->
         <div class="container" id="footer">
             <div class="col-md-12">
                 <div class="mb-4 text-center">
-
-                    <!-- Simply comment or uncomment the ones you would like to use/hide -->
-                    <!-- Refer to documentation page on how to edit/add more icons:
-                        https://themes.jperez.ca/treelink_doc.html
-                    -->
-
-                    <div>
-                        <ul class="about-social list-inline mt-5 text-center">
-
-                            <!-- Change your social media icons here, uncomment the ones that apply, and replace the "#" with your actual link -->
-                            <!-- Instagram Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-instagram"></i></a></li> -->
-
-                            <!-- YouTube Icon -->
-                            <!-- <li class="list-inline-item"><a href="https://www.youtube.com/@goingforbrooke" target="_blank"><i class="mdi mdi-youtube-play"></i></a></li> -->
-
-                            <!-- Twitter Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-twitter"></i></a></li> -->
-
-                            <!-- Facebook Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-facebook"></i></a></li> -->
-
-                            <!-- Email Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-email"></i></a></li> -->
-
-                            <!-- Vimeo Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-vimeo"></i></a></li> -->
-
-                            <!-- Linkedin Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-linkedin"></i></a></li> -->
-
-                            <!-- Telegram Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-telegram"></i></a></li> -->
-
-                            <!-- Github Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-github-circle"></i></a></li> -->
-
-                            <!-- Pinterest Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-pinterest"></i></a></li> -->
-
-                            <!-- Tumblr Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-tumblr"></i></a></li> -->
-
-                            <!-- Soundcloud Icon -->
-                            <!-- <li class="list-inline-item"><a href="#" target="_blank"><i class="mdi mdi-soundcloud"></i></a></li> -->
-
-                        </ul>
-                    </div>
-
-                    <!-- Replace the text of the footer here -->
                     <p class="custom-text-color-secondary footer-text mb-5 mt-3">©2026 - goingforbrooke</p>
 
                 </div>
@@ -275,63 +126,79 @@
         </div>
         <!-- 6. End: Footer Section ------------------->
 
-
-        <!-- Back to top class -->
-        <a href="#home" class="back_top"><i class="mdi mdi-chevron-up"></i></a>
-
-        <!-- All Javascript ------------------------------------------------>
-
-        <script src="assets/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/js/jquery.min.js"></script>
-
-        <!-- Contact Js -->
-        <script src="assets/js/contact.js"></script>
-
-        <!-- Text Type -->
-        <script src="assets/js/typed.js"></script>
-
-        <!-- Custom Js -->
-        <script src="assets/js/custom.js"></script>
-
-        <!-- Typing Script Controls -->
         <script>
-            var typed = new Typed('.element', {
+            (function () {
+                var words = ["ARC Raiders…", "Resident Evil…", "Helldivers…", "DOOM…", "Baldur's Gate…", "Horizon: Forbidden West…", "Elden Ring…"];
+                var target = document.querySelector('.element');
+                var wordIndex = 0;
+                var letterIndex = 0;
+                var deleting = false;
 
-                // In this section, you can customize the Typescript effect.
-                // Change the words that cycle in your profile header below:
-                // Make sure that the words are inside a "" and separated by a ,
-                strings: ["ARC Raiders…", "Resident Evil…", "Helldivers…", "DOOM…", "Baldur's Gate…", "Horizon: Forbidden West…", "Elden Ring…"],
+                function typeLoop() {
+                    if (!target) return;
+                    var word = words[wordIndex];
+                    target.textContent = word.slice(0, letterIndex);
 
-                // Change the speed of the typing effect here:
-                typeSpeed: 40,
+                    if (!deleting && letterIndex === word.length) {
+                        deleting = true;
+                        setTimeout(typeLoop, 1600);
+                        return;
+                    }
 
-                // Change the speed of the backtyping/deleting effect here:
-                backSpeed: 30,
+                    if (deleting && letterIndex === 0) {
+                        deleting = false;
+                        wordIndex = (wordIndex + 1) % words.length;
+                    }
 
-                // Change the delay time before starting to delete a word here:
-                backDelay: 1600,
+                    letterIndex += deleting ? -1 : 1;
+                    setTimeout(typeLoop, deleting ? 30 : 40);
+                }
 
-                // Do you want to loop the effect? If yes type "true" if not then "false":
-                loop: true
+                function afterFirstPaint(callback) {
+                    if ('requestIdleCallback' in window) {
+                        requestIdleCallback(callback, { timeout: 1500 });
+                    } else {
+                        setTimeout(callback, 600);
+                    }
+                }
 
-            });
+                afterFirstPaint(function () {
+                    var video = document.querySelector('.bg-video');
+                    var source = video && video.querySelector('source[data-src]');
+                    if (!video || !source) return;
+                    source.src = source.getAttribute('data-src');
+                    video.load();
+                    var playPromise = video.play();
+                    if (playPromise && typeof playPromise.catch === 'function') {
+                        playPromise.catch(function () {});
+                    }
+                });
+
+                afterFirstPaint(function () {
+                    var analytics = document.createElement('script');
+                    analytics.async = true;
+                    analytics.src = 'https://www.googletagmanager.com/gtag/js?id=G-TMKXXZP1B1';
+                    document.head.appendChild(analytics);
+
+                    window.dataLayer = window.dataLayer || [];
+                    window.gtag = function(){ dataLayer.push(arguments); };
+                    window.gtag('js', new Date());
+                    window.gtag('config', 'G-TMKXXZP1B1');
+
+                    var metricool = document.createElement('script');
+                    metricool.async = true;
+                    metricool.src = 'https://tracker.metricool.com/resources/be.js';
+                    metricool.onload = function () {
+                        if (window.beTracker) {
+                            window.beTracker.t({ hash: 'c675a7896136c9251ebbf66d647345f' });
+                        }
+                    };
+                    document.head.appendChild(metricool);
+                });
+
+                typeLoop();
+            }());
         </script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics here -->
-        <!-- Add a google analytics script here if you want to track the site -->
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-TMKXXZP1B1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-TMKXXZP1B1');
-        </script>
-
-        <!-- Metricool Web Connection -->
-        <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"c675a7896136c9251ebbf66d647345f"})});</script>
-
 
     </body>
 

@@ -20,6 +20,36 @@
     font-weight: 400;
 }
 
+.fa-youtube:before {
+    content: "\f167";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+.fa-discord:before {
+    content: "\f392";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+.fa-twitch:before {
+    content: "\f1e8";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
+.fa-spotify:before {
+    content: "\f1bc";
+    font-family: 'Font Awesome 6 Brands';
+    font-weight: 400;
+}
+
 .fa-x-twitter:before {
     content: "\e61b";
     font-family: 'Font Awesome 6 Brands';
