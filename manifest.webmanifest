@@ -1,6 +1,6 @@
 {
   "icons": [
-    { "src": "/assets/images/icon-192.png", "type": "image/png", "sizes": "192x192" },
-    { "src": "/assets/images/icon-512.png", "type": "image/png", "sizes": "512x512" }
+    { "src": "/assets/images/26-10-8_icon_192.png", "type": "image/png", "sizes": "192x192", "purpose": "any" },
+    { "src": "/assets/images/26-10-8_icon_512.png", "type": "image/png", "sizes": "512x512", "purpose": "any" }
   ]
 }
